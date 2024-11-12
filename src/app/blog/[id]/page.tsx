@@ -1,11 +1,11 @@
-import React from "react";
+import React, { use } from "react";
 
 type PropTypes = {
 	params: Promise<{ id: number }>;
 };
 
-const BlogPost = async ({ params }: PropTypes) => {
-	const { id } = await params;
+const BlogPost = ({ params }: PropTypes) => {
+	const { id } = use(params);
 
 	return <div>BlogPost {id}</div>;
 };
