@@ -14,12 +14,9 @@ type Data = {
 
 const getData = async (id: number): Promise<Data> => {
 	//default no-store
-	const res = await fetch(
-		`https://jsonplaceholder.typicode.com/posts/${id}`,
-		{
-			cache: "force-cache",
-		}
-	);
+	const res = await fetch(`http://127.0.0.1:3000/api/posts/${id}`, {
+		cache: "no-store",
+	});
 
 	if (!res.ok) {
 		return notFound(); // return not found page

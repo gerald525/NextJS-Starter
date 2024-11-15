@@ -1,4 +1,5 @@
 import React from "react";
+import { notFound } from "next/navigation";
 
 type Item = {
 	userId: number;
@@ -9,12 +10,12 @@ type Item = {
 
 const getData = async () => {
 	//default no-store
-	const res = await fetch("https://jsonplaceholder.typicode.com/posts", {
+	const res = await fetch("http://127.0.0.1:3000/api/posts", {
 		cache: "no-store",
 	});
 
 	if (!res.ok) {
-		throw new Error("Failed to fetch data");
+		return notFound();
 	}
 
 	return res.json();

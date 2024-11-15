@@ -10,9 +10,13 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.20",
+    "axios": "^1.7.7",
+    "mongoose": "^8.8.1",
     "next": "15.0.3",
     "react": "19.0.0-rc-66855b96-20241106",
-    "react-dom": "19.0.0-rc-66855b96-20241106"
+    "react-dom": "19.0.0-rc-66855b96-20241106",
+    "react-query": "^3.39.3",
+    "swr": "^2.2.5"
   },
   "devDependencies": {
     "@types/node": "^20",
