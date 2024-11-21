@@ -15,33 +15,23 @@ type LinkType = {
 const links: Array<LinkType> = [
 	{
 		id: 1,
-		title: "Home",
-		url: "/",
+		title: "Client Side Rendering",
+		url: "/csr",
 	},
 	{
 		id: 2,
-		title: "Portfolio",
-		url: "/portfolio",
+		title: "Server Side Rendering",
+		url: "/ssr",
 	},
 	{
 		id: 3,
-		title: "Blog",
-		url: "/blog",
+		title: "Static Site Generation",
+		url: "/sg",
 	},
 	{
 		id: 4,
-		title: "About",
-		url: "/about",
-	},
-	{
-		id: 5,
-		title: "Contact",
-		url: "/contact",
-	},
-	{
-		id: 6,
-		title: "Dashboard",
-		url: "/dashboard",
+		title: "Incremental Static Site Regeneration",
+		url: "/isr",
 	},
 ];
 

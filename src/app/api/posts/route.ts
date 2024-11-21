@@ -2,7 +2,7 @@ import Post from "@/models/post";
 import connect from "@/utils/db";
 import { NextResponse } from "next/server";
 
-export const GET = async (request: Request) => {
+export const GET = async () => {
 	try {
 		await connect();
 
@@ -10,6 +10,7 @@ export const GET = async (request: Request) => {
 
 		return new NextResponse(JSON.stringify(list), { status: 200 });
 	} catch (err) {
+		console.log(err);
 		return new NextResponse("Database error", { status: 500 });
 	}
 };

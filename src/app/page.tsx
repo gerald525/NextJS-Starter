@@ -17,7 +17,7 @@ export default function Home() {
 				<button className={styles.button}>See our work</button>
 			</div>
 			<div className={styles.item}>
-				<Image src={HomeImg} alt="Filip Home" className={styles.img} />
+				<Image src={HomeImg} alt="Gerald Home" className={styles.img} />
 			</div>
 		</div>
 	);
